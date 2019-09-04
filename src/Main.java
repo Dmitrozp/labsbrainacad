@@ -13,7 +13,7 @@ public class Main {
                 System.out.println("Полный");
                 return;
             }
-            
+
             System.out.println("Новый фильм " + freeIndex);
             library.film[freeIndex] = new Film("asdasdf");
 
