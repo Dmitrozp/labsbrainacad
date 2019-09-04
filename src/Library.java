@@ -24,6 +24,18 @@ public class Library {
 
     }
 
+    public int searchNullCellFilm() {
+        for (int i = 0; i <5; i++) {
+            if (this.film[i] == null) {
+                System.out.println("Нет названия фильма в ячейке["
+                                    + i + "]");
+                return i;
+            }
+        }
+        System.out.println("Библиотека заполнена");
+        return -1;
+    }
+
     public String getName() {
         return name;
     }

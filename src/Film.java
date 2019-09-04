@@ -17,6 +17,8 @@ public class Film {
                 "создана.»");
     }
 
+
+
     public String getName() {
         return name;
     }
