@@ -1,7 +1,7 @@
 public class Film {
-    String name;
-    int duration;
-    String genre;
+    private String name;
+    private int duration;
+    private String genre;
 
     public static final String COMEDY = "Комедии";
     public static final String FANTAZY = "Фантастика";
@@ -15,6 +15,15 @@ public class Film {
         this.name = name;
         System.out.println("Фильм " + this.name + ", успешно\n" +
                 "создана.»");
+    }
+
+    public void getFilmAllColums() {
+        System.out.println("Фильм ["  + "]"
+                + this.getName()
+                + " Жанр " + this.getGenre()
+                + "Продолжительность "
+                + this.getDuration()
+                + " минут");
     }
 
 

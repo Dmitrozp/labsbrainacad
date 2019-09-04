@@ -1,7 +1,7 @@
 
 public class Library {
 
-    final String name;
+    private final String name;
     Film[] film;
 
     {
@@ -10,10 +10,14 @@ public class Library {
 
     {
         film[0] = new Film("Один дома");
-        film[1] = new Film("Маска");
+        film[0].setGenre(Film.COMEDY);
+        film[0].setDuration(123);
+        film[1] = new Film("Челюсти");
+        film[1].setGenre(Film.HORROR);
+        film[1].setDuration(150);
         //film[2] = new Film("Перевозчик");
         //film[3] = new Film("Дум");
-        //film[4] = new Film("Челюсти");
+        //film[4] = new Film("Маска");
         System.out.println("Добавлены любимые фильмы");
     }
 
@@ -34,6 +38,12 @@ public class Library {
         }
         System.out.println("Библиотека заполнена");
         return -1;
+    }
+
+    public void getAllFilms(){
+        for (int i = 0; i < 6; i++) {
+        film[i].getFilmAllColums();
+        }
     }
 
     public String getName() {
