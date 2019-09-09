@@ -11,7 +11,6 @@ public class Pizzeria {
         pizzas[4] = new Pizza ("сырная", "сыр и салями", 145, 2);
 
 
-
         pizzas[0].getPizza();
         pizzas[3].getPizza();
         //Pizza[] pizzas = new  Pizza[5];
