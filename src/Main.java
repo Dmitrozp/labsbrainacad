@@ -11,6 +11,7 @@ public class Main {
         for (int i = 0; i < 6; i++) {
             int freeIndex = library.searchNullCellFilm();
 
+
             if (freeIndex < 0) {
                 System.out.println("Полный");
                 return;
